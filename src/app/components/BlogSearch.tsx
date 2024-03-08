@@ -106,6 +106,7 @@ const BlogSearch = () => {
         <div className="flex flex-wrap flex-row gap-2 mt-2">
           {allTags.map((tag, index) => (
             <div
+            key={index}
               className={`flex justify-center items-center border border-light-border rounded-full py-1 px-[16px] cursor-pointer   text-[14px]
               ${tags[index] ? "bg-black text-white" : "text-light-gray"}
             
